@@ -1,1 +1,1 @@
-print ('Esse é pra testar o pull')
+print('Esse é pra testar o pull')
