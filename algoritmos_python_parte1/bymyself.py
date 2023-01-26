@@ -27,6 +27,6 @@ print(numeros)
 
 for i in range(tamanho):
     index_menor = i
-    for j in range(j+1, tamanho):
+    for j in range(j+1, tamanho)
 
 
