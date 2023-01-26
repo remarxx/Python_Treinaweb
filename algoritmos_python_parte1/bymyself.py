@@ -26,8 +26,7 @@ else:
 print(numeros)
 
 for i in range(tamanho):
-    posicao_menor = i  # 5
-    for j in range(int(i + 1), tamanho):
-        if numeros[j] < numeros[posicao_menor]:
-            posicao_menor = j
-        temp = numeros[posicao_menor]
+    index_menor = i
+    for j in range(j+1, tamanho):
+
+
