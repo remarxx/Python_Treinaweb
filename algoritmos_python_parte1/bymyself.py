@@ -27,6 +27,11 @@ print(numeros)
 
 for i in range(tamanho):
     index_menor = i
-    for j in range(j+1, tamanho)
-
-
+    for j in range(int(i + 1), tamanho):
+        if numeros[j] < numeros[index_menor]:
+            index_menor = j
+    temp = numeros[index_menor]
+    numeros[index_menor] = numeros[i]
+    numeros[i] = temp
+    print(numeros)
+    
