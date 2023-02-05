@@ -10,9 +10,7 @@ Entrada de dados
 56 Notebook 3
 19 Processador 23
 22 HD 7
-
 """
-
 
 class Produto:
     def __init__(self, id, nome, quantidade):
@@ -44,7 +42,6 @@ class Produto:
     def quantidade(self, quantidade):
         self.__quantidade = quantidade
 
-
 if __name__ == '__main__':
 
     t = int(input())
@@ -55,26 +52,17 @@ if __name__ == '__main__':
         produto = Produto(int(id), nome, int(quantidade))
         produtos.append(produto)
 
-# Capturar objetos no list()
+    for x in range(len(produtos)):
+        index_menor = x
+        for j in range(int(x + 1), len(produtos)):
+            if produtos.[j] < numeros[index_menor]:
+                index_menor = j
 
-        for m in produtos:
-            for o in range(0, t):
-                index_maiorqtde = m
-                for j in range(o + 1, t):
-                    if m.quantidade > quantidade[index_maiorqtde]:
-                        index_maiorqtde = j
-                temp = produtos[index_maiorqtde]
-                produtos[index_maiorqtde] = produtos[m]
-                produtos[m] = temp
-                print(m.id, m.nome, m.quantidade)
 
-""" Informe seu código aqui
+        temp = numeros[index_menor]
+        numeros[index_menor] = numeros[i]
+        numeros[i] = temp
+        print(numeros)
 
-print()
-
-for p in produtos:
-    print(p.nome)
-    
-        for obj in produtos:
-            print(obj.id, obj.nome, obj.quantidade, sep=' ')
-        print('') """
+    for p in produtos:
+        print(p.nome)
